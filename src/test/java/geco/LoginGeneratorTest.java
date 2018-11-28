@@ -48,4 +48,10 @@ public class LoginGeneratorTest {
         this.loginGenerator.generateLoginForNomAndPrenom("Dùrand","Paul");
         assertTrue(this.loginService.loginExists("PDUR"));
     }
+
+    @Test
+    public void testgenerateLoginForNomAndPrenomCT4() {
+        this.loginGenerator.generateLoginForNomAndPrenom("Du","Paul");
+        assertTrue(this.loginService.loginExists("PDU"));
+    }
 }
